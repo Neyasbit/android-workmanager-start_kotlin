@@ -35,7 +35,6 @@ class BlurActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityBlurBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         binding.goButton.setOnClickListener { viewModel.applyBlur(blurLevel) }
     }
 
